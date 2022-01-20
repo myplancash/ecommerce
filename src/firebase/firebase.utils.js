@@ -1,0 +1,24 @@
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
+
+
+const config = {
+  apiKey: "AIzaSyCz9RJ6_BgP0-Akf_vJHqQW-qT-Hjcd0ZQ",
+  authDomain: "ecommerce-db-23e2b.firebaseapp.com",
+  projectId: "ecommerce-db-23e2b",
+  storageBucket: "ecommerce-db-23e2b.appspot.com",
+  messagingSenderId: "144114044469",
+  appId: "1:144114044469:web:20f87283f71a601118ab7c"
+};
+
+firebase.initializeApp(config);
+
+export const auth = firebase.auth();
+export const firestore = firebase.firestore();
+
+const provider = new firebase.auth.GoogleAuthProvider();
+provider.setCustomParameters({ prompt: "select_account" })
+export const signInWithGoogle = () => auth.signInWithPopup(provider)
+
+export default firebase;
