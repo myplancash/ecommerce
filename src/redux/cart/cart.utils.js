@@ -20,3 +20,19 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
   //whenever we add a cartItems in any subsequent car items will reference that quantity value we have added to our object when we stored them
   //then we need to import them into our reducer
 }
+
+export const removeItemFromCart = (cartItems, cartItemToRemove) => {
+  const existingCartItem = cartItems.find(
+    cartItem => cartItem.id === cartItemToRemove.id
+  );
+
+  if(existingCartItem.quantity === 1) {
+    return cartItems.filter(cartItem => cartItem.id !== cartItemToRemove.id)
+  }
+
+  return cartItems.map(cartItem =>
+    cartItem.id === cartItemToRemove.id
+    ? {...cartItem, quantity: cartItem.quantity -1 }
+    : cartItem
+  )
+}
