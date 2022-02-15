@@ -1,11 +1,16 @@
 import React from 'react';
-
-import CollectionItem from '../../components/collection-item/collection-item.component';
-
-import './collection.styles.scss';
 import { connect } from 'react-redux';
 
+import CollectionItem from '../../components/collection-item/collection-item.component';
+// import './collection.styles.scss';
 import { selectCollection } from '../../redux/shop/shop.selectors';
+
+import {
+  CollectionPageContainer,
+  CollectionTitle,
+  CollectionItemsContainer, }
+from './collection.styles';
+
 
 //aligns better with our component tree naming: ShopPage > CollectionPage > CollectionItem
 const CollectionPage = ({collection}) => {
@@ -13,16 +18,16 @@ const CollectionPage = ({collection}) => {
 
   console.log(collection)
   return (
-    <div className="collection-page">
-      <h2 className="title">{title}</h2>
-      <div className="items">
+    <CollectionPageContainer>
+      <CollectionTitle>{title}</CollectionTitle>
+      <CollectionItemsContainer>
         {
           items.map(item => (
             <CollectionItem key={item.id} item={item} />
           ))
         }
-      </div>
-    </div>
+      </CollectionItemsContainer>
+    </CollectionPageContainer>
   )
 }
 //ownProps gives us all of the props that we're getting on the CollectionPage component
