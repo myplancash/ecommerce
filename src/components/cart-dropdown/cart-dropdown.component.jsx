@@ -1,42 +1,43 @@
 import React from 'react';
-
-import CustomButton from '../custom-button/custom-button.component';
-import './cart-dropdown.styles.scss';
-
-
-import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import { withRouter } from 'react-router-dom';
+
+import CartItem from '../cart-item/cart-item.component';
 import { selectCartItems } from '../../redux/cart/cart.selectors';
-import { toggleCartHidden } from '../../redux/cart/cart.actions';
+import { toggleCartHidden } from '../../redux/cart/cart.actions.js';
 
+import {
+  CartDropdownContainer,
+  CartDropdownButton,
+  EmptyMessageContainer,
+  CartItemsContainer
+} from './cart-dropdown.styles';
 
-import CartItem from "../cart-item/cart-item.component";
-import { connect } from 'react-redux'
-
-const CartDropdown = ({cartItems, history, dispatch}) => (
-  <div className="cart-dropdown">
-    <div className="cart-items">
-      { cartItems.length ? (
+const CartDropdown = ({ cartItems, history, dispatch }) => (
+  <CartDropdownContainer>
+    <CartItemsContainer>
+      {cartItems.length ? (
         cartItems.map(cartItem => (
-          //Notice how we are reusing components here
           <CartItem key={cartItem.id} item={cartItem} />
         ))
       ) : (
-        <span className="empty-message">Your cart is empty</span>
+        <EmptyMessageContainer>Your cart is empty</EmptyMessageContainer>
       )}
-    </div>
-    <CustomButton onClick={() => {
-      history.push("/checkout")
-      //to make the dropdown turn true so it hides when click onto checkout page
-      dispatch(toggleCartHidden())
-    }}>
-      GO TO THE CHECKOUT
-    </CustomButton>
-  </div>
-)
+    </CartItemsContainer>
+    <CartDropdownButton
+      onClick={() => {
+        history.push('/checkout');
+        dispatch(toggleCartHidden());
+      }}
+    >
+      GO TO CHECKOUT
+    </CartDropdownButton>
+  </CartDropdownContainer>
+);
 
 const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems
-})
+});
 
 export default withRouter(connect(mapStateToProps)(CartDropdown));
