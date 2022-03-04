@@ -19,19 +19,26 @@ const INITIAL_STATE = {
       linkUrl: 'shop/sneakers'
     },
     {
+      title: 'polo',
+      imageUrl: 'https://i.ibb.co/wrpCZbX/polo.jpg',
+      id: 4,
+      size: 'large',
+      linkUrl: 'shop/polo'
+    },
+    {
       title: 'womens',
       imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
       size: 'large',
-      id: 4,
+      id: 5,
       linkUrl: 'shop/womens'
     },
     {
       title: 'mens',
       imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
       size: 'large',
-      id: 5,
+      id: 6,
       linkUrl: 'shop/mens'
-    }
+    },
   ]
 };
 

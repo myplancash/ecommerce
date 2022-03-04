@@ -152,49 +152,98 @@ const SHOP_DATA = {
       }
     ]
   },
-  womens: {
+  polo: {
     id: 4,
+    title: 'Polo',
+    routeName: 'polo',
+    items: [
+      {
+        id: 23,
+        name: 'Slim Fit Organic Stretch Cotton',
+        imageUrl: 'https://i.ibb.co/W6T4p1B/slim-fit-organic-stretch-cotton.png',
+        price: 69
+      },
+      {
+        id: 24,
+        name: 'Pique Polo Shirt',
+        imageUrl: 'https://i.ibb.co/cQ0p2FJ/pique-polo-shirt.png',
+        price: 89
+      },
+      {
+        id: 25,
+        name: 'Unisex x AWAKE NY',
+        imageUrl: 'https://i.ibb.co/vYxkkg0/unisex-x-awake-ny.png',
+        price: 79
+      },
+      {
+        id: 26,
+        name: 'Classic Fit L.12.12 Polo Shirt',
+        imageUrl: 'https://i.ibb.co/4RRrJRf/classic-fit-l-12-12-polo-shirt.png',
+        price: 80
+      },
+      {
+        id: 27,
+        name: 'Striped Polo Shirt',
+        imageUrl: 'https://i.ibb.co/7RgcHWm/striped-polo-shirt.png',
+        price: 45
+      },
+      {
+        id: 28,
+        name: 'Regular Fit Colour-block Stretch',
+        imageUrl: 'https://i.ibb.co/pbXB62N/regular-fit-colour-block-stretch.png',
+        price: 135
+      },
+      {
+        id: 29,
+        name: 'Colour-block Stretch Cotton Polo Shirt',
+        imageUrl: 'https://i.ibb.co/bRsdb2b/colour-block-stretch-cotton-polo-shirt.png',
+        price: 20
+      }
+    ]
+  },
+  womens: {
+    id: 5,
     title: 'Womens',
     routeName: 'womens',
     items: [
       {
-        id: 23,
+        id: 30,
         name: 'Blue Tanktop',
         imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
         price: 25
       },
       {
-        id: 24,
+        id: 31,
         name: 'Floral Blouse',
         imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
         price: 20
       },
       {
-        id: 25,
+        id: 32,
         name: 'Floral Dress',
         imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
         price: 80
       },
       {
-        id: 26,
+        id: 33,
         name: 'Red Dots Dress',
         imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
         price: 80
       },
       {
-        id: 27,
+        id: 34,
         name: 'Striped Sweater',
         imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
         price: 45
       },
       {
-        id: 28,
+        id: 35,
         name: 'Yellow Track Suit',
         imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
         price: 135
       },
       {
-        id: 29,
+        id: 36,
         name: 'White Blouse',
         imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
         price: 20
@@ -202,42 +251,42 @@ const SHOP_DATA = {
     ]
   },
   mens: {
-    id: 5,
+    id: 6,
     title: 'Mens',
     routeName: 'mens',
     items: [
       {
-        id: 30,
+        id: 37,
         name: 'Camo Down Vest',
         imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
         price: 325
       },
       {
-        id: 31,
+        id: 38,
         name: 'Floral T-shirt',
         imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
         price: 20
       },
       {
-        id: 32,
+        id: 39,
         name: 'Black & White Longsleeve',
         imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
         price: 25
       },
       {
-        id: 33,
+        id: 40,
         name: 'Pink T-shirt',
         imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
         price: 25
       },
       {
-        id: 34,
+        id: 41,
         name: 'Jean Long Sleeve',
         imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
         price: 40
       },
       {
-        id: 35,
+        id: 42,
         name: 'Burgundy T-shirt',
         imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
         price: 25
