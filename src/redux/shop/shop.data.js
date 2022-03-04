@@ -1,4 +1,3 @@
-
 const SHOP_DATA = {
   hats: {
     id: 1,

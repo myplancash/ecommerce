@@ -11,7 +11,6 @@ const config = {
   appId: "1:144114044469:web:20f87283f71a601118ab7c"
 };
 
-
 firebase.initializeApp(config);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -42,16 +41,33 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 //call it in app.js where we have access to Shop data, to only fire the function 1 time, then remove this code there
 export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
   const collectionRef = firestore.collection(collectionKey)
-  console.log(collectionRef);
 
   const batch = firestore.batch();
   objectsToAdd.forEach(obj => {
     const newDocRef = collectionRef.doc();
-    // console.log(newDocRef);
+    // console.log(obj)
     batch.set(newDocRef, obj);
-  })
+  });
 
   return await batch.commit();
+};
+
+export const convertCollectionsSnapshotToMap = collectionsSnapshot => {
+  const transformedCollection = collectionsSnapshot.docs.map(doc => {
+
+    const { title, items } = doc.data();
+
+    return {
+      routeName: encodeURI(title.toLowerCase()),
+      id: doc.id,
+      title,
+      items,
+    }
+  })
+  return transformedCollection.reduce((acc, collection) => {
+    acc[collection.title.toLowerCase()] = collection;
+    return acc
+  }, {})
 }
 
 export const auth = firebase.auth();
