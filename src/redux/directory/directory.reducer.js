@@ -19,11 +19,11 @@ const INITIAL_STATE = {
       linkUrl: 'shop/sneakers'
     },
     {
-      title: 'polo',
-      imageUrl: 'https://i.ibb.co/wrpCZbX/polo.jpg',
+      title: 'sale',
+      imageUrl: 'https://i.ibb.co/8X72FqD/sale.jpg',
       id: 4,
       size: 'large',
-      linkUrl: 'shop/polo'
+      linkUrl: 'shop/sale'
     },
     {
       title: 'womens',

@@ -1,4 +1,4 @@
-const SHOP_DATA = {
+/* const SHOP_DATA = {
   hats: {
     id: 1,
     title: 'Hats',
@@ -152,51 +152,51 @@ const SHOP_DATA = {
       }
     ]
   },
-  polo: {
+  sale: {
     id: 4,
-    title: 'Polo',
-    routeName: 'polo',
+    title: 'Sale',
+    routeName: 'sale',
     items: [
       {
         id: 23,
         name: 'Slim Fit Organic Stretch Cotton',
-        imageUrl: 'https://i.ibb.co/W6T4p1B/slim-fit-organic-stretch-cotton.png',
+        imageUrl: 'https://i.ibb.co/k3HLvG9/classic-fit-l-12-12-polo-shirt.jpg',
         price: 69
       },
       {
         id: 24,
         name: 'Pique Polo Shirt',
-        imageUrl: 'https://i.ibb.co/cQ0p2FJ/pique-polo-shirt.png',
+        imageUrl: 'https://i.ibb.co/pwKvWs7/striped-polo-shirt.jpg',
         price: 89
       },
       {
         id: 25,
         name: 'Unisex x AWAKE NY',
-        imageUrl: 'https://i.ibb.co/vYxkkg0/unisex-x-awake-ny.png',
+        imageUrl: 'https://i.ibb.co/zFvSm4J/pique-polo-shirt.jpg',
         price: 79
       },
       {
         id: 26,
         name: 'Classic Fit L.12.12 Polo Shirt',
-        imageUrl: 'https://i.ibb.co/4RRrJRf/classic-fit-l-12-12-polo-shirt.png',
+        imageUrl: 'https://i.ibb.co/cxvpZK2/slim-fit-organic-stretch-cotton.jpg',
         price: 80
       },
       {
         id: 27,
         name: 'Striped Polo Shirt',
-        imageUrl: 'https://i.ibb.co/7RgcHWm/striped-polo-shirt.png',
+        imageUrl: 'https://i.ibb.co/6X10TyG/unisex-x-awake-ny.jpg',
         price: 45
       },
       {
         id: 28,
         name: 'Regular Fit Colour-block Stretch',
-        imageUrl: 'https://i.ibb.co/pbXB62N/regular-fit-colour-block-stretch.png',
+        imageUrl: 'https://i.ibb.co/SV1xDND/colour-block-stretch-cotton-polo-shirt.jpg',
         price: 135
       },
       {
         id: 29,
         name: 'Colour-block Stretch Cotton Polo Shirt',
-        imageUrl: 'https://i.ibb.co/bRsdb2b/colour-block-stretch-cotton-polo-shirt.png',
+        imageUrl: 'https://i.ibb.co/wN1rBFK/regular-fit-colour-block-stretch.jpg',
         price: 20
       }
     ]
@@ -295,4 +295,4 @@ const SHOP_DATA = {
   }
 };
 
-export default SHOP_DATA;
+export default SHOP_DATA; */

@@ -51,13 +51,14 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
 
   return await batch.commit();
 };
-
-/* export const convertCollectionsSnapshotToMap = collectionsSnapshot => {
+//we want it to convert into an object not an Array we get back
+export const convertCollectionsSnapshotToMap = collectionsSnapshot => {
   const transformedCollection = collectionsSnapshot.docs.map(doc => {
 
     const { title, items } = doc.data();
 
     return {
+      //in order to Route by url we use encodeURI
       routeName: encodeURI(title.toLowerCase()),
       id: doc.id,
       title,
@@ -69,7 +70,7 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
     return acc
   }, {})
 }
- */
+
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
