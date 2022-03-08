@@ -18,7 +18,9 @@ import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 // import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
 
+
 class App extends React.Component {
+
   unsubscribeFromAuth = null;
 
   componentDidMount() {
@@ -48,7 +50,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header/>
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="151px" height="32px" viewBox="0 0 151 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>esthers-logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="esthers-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" opacity="0" x="0" y="0" width="151" height="32"></rect>
+        <text id="ESTHER’S" font-family="GothamRounded-Medium, Gotham Rounded" font-size="21.95424" font-weight="400" letter-spacing="-0.135103017" fill="#3C1A5B">
+            <tspan x="37.7999265" y="26">ESTHER’S</tspan>
+        </text>
+        <g id="Vector" transform="translate(1.400000, 1.400000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7">
+            <path d="M0.00114220134,21.8522677 C-0.0670847058,25.6192763 2.92977216,28.729079 6.69653561,28.7999978 L18.5034654,28.7999978 C22.2702286,28.729079 25.2670849,25.6192763 25.1988584,21.8522677 L24.4123286,13.4141955 C24.2126942,10.2330651 21.9867556,7.54261383 18.8994292,6.750855 C18.2560858,6.5637001 17.5896169,6.46796609 16.9196076,6.46646606 L8.28039164,6.46646606 C7.61038236,6.46796609 6.94391418,6.5637001 6.30057078,6.750855 C3.21515309,7.54286278 0.990375624,10.2313354 0.789470766,13.410596 L0.00114220134,21.8522677 Z" id="Vector-50" stroke="#3C1A5B"></path>
+            <path d="M18.8993856,9.69914129 L18.8993856,6.06148291 C18.8314551,2.64912937 16.0122049,-0.0631300395 12.5999566,0.00111826488 C9.18770838,-0.0631300395 6.36845806,2.64912937 6.30052762,6.06148291 L6.30052762,9.69734161 M17.9994672,19.879545 C17.6590475,20.7248298 17.1119939,21.471188 16.4084118,22.0502607 C14.1745435,23.8705391 10.9625965,23.8471206 8.7555051,21.9944628 C8.06150827,21.4049465 7.52677934,20.6504694 7.20044605,19.8003481 M7.20044605,14.400558 L7.20044605,16.200488 M17.9994672,14.400558 L17.9994672,16.200488" id="Vector-51" stroke="#FC327F"></path>
+        </g>
+        <text id="R" font-family="ProximaNova-Bold, Proxima Nova" font-size="3.595" font-weight="bold" letter-spacing="-0.022123085" fill="#3C1A5B">
+            <tspan x="147.355269" y="8">R</tspan>
+        </text>
+        <circle id="Oval" stroke="#3C1A5B" stroke-width="0.5" cx="148.5" cy="6.5" r="2.25"></circle>
+    </g>
+</svg>
