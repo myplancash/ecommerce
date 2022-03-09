@@ -1,3 +1,7 @@
+#E-commerce ESTHER'S Clothing Store
+
+![esthers](https://user-images.githubusercontent.com/64751892/157454602-931229e7-5c24-4cb7-946b-4e5f30bac518.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
