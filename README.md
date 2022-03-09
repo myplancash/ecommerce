@@ -1,4 +1,6 @@
-#E-commerce ESTHER'S Clothing Store
+# E-commerce ESTHER'S Clothing Store
+
+## The Newest Luxurious Esther's in Attractive Designs
 
 ![esthers](https://user-images.githubusercontent.com/64751892/157454602-931229e7-5c24-4cb7-946b-4e5f30bac518.gif)
 
