@@ -13,7 +13,7 @@ const StripeCheckoutButton = ({ price }) => {
   return (
     <StripeCheckout
       label='Pay Now'
-      name='CRWN Clothing Ltd.'
+      name="Esther's Inc.."
       billingAddress
       shippingAddress
       image='https://svgshare.com/i/CUz.svg'
