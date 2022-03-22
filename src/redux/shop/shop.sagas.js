@@ -1,4 +1,4 @@
-import { takeEvery, call, put } from 'redux-saga/effects';
+import { takeLatest, call, put } from 'redux-saga/effects';
 
 import { firestore, convertCollectionsSnapshotToMap } from '../../firebase/firebase.utils';
 import { fetchCollectionsSuccess, fetchCollectionsFailure } from './shop.actions';
@@ -10,6 +10,7 @@ export function* fetchCollectionsAsync() {
   try {
     const collectionRef = firestore.collection('collections');
     const snapshot = yield collectionRef.get();
+    console.log(snapshot)
     const collectionsMap = yield call(convertCollectionsSnapshotToMap, snapshot)
     yield put(fetchCollectionsSuccess(collectionsMap))
   } catch(error) {
@@ -19,9 +20,9 @@ export function* fetchCollectionsAsync() {
 
 
 }
-
+//We use takeLatest because we wanna to issue this API call one time
 export function* fetchCollectionsStart() {
-  yield takeEvery(
+  yield takeLatest(
     ShopActionTypes.FETCH_COLLECTIONS_START,
     fetchCollectionsAsync
   );
