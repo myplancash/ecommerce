@@ -1,12 +1,18 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { clearItemFromCart } from '../../redux/cart/cart.actions';
+
 
 import {
   CartItemContainer,
   ItemDetailsContainer,
-  CartItemImage
+  CartItemImage,
+  RemoveButtonContainer
 } from './cart-item.styles';
 
-const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
+const CartItem = ({ clearItem, item}) => {
+  const { imageUrl, price, name, quantity } = item
+  return (
   <CartItemContainer>
     <CartItemImage src={imageUrl} alt='item' />
     <ItemDetailsContainer>
@@ -15,7 +21,15 @@ const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
         {quantity} x ${price}
       </span>
     </ItemDetailsContainer>
+    <RemoveButtonContainer onClick={() => clearItem(item)}>
+        &#10005;
+    </RemoveButtonContainer>
   </CartItemContainer>
-);
+  )
+};
 
-export default CartItem;
+const mapDispatchToProps = (dispatch) => ({
+  clearItem: item => dispatch(clearItemFromCart(item))
+})
+
+export default connect(null, mapDispatchToProps)(CartItem);
